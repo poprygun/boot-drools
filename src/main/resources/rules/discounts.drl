@@ -1,0 +1,15 @@
+package rules
+ 
+import io.microsamples.model.Car
+rule "Chevy Discount"
+	when 
+		productObject: Car(brand=="chevy")
+	then
+		productObject.setDiscount(15);
+	end
+rule "Ford Discount"
+	when 
+		productObject: Car(brand=="ford")
+	then
+		productObject.setDiscount(25);
+	end
