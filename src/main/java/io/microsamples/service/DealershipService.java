@@ -17,7 +17,7 @@ public class DealershipService {
 		this.kieContainer = kieContainer;
 	}
 
-	public Car getProductDiscount(Car product) {
+	public Car getCarDiscount(Car product) {
 		KieSession kieSession = kieContainer.newKieSession("rulesSession");
 		kieSession.insert(product);
 		kieSession.fireAllRules();

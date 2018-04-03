@@ -5,11 +5,11 @@ rule "Chevy Discount"
 	when 
 		productObject: Car(brand=="chevy")
 	then
-		productObject.setDiscount(15);
+		productObject.setDiscount(7);
 	end
 rule "Ford Discount"
 	when 
 		productObject: Car(brand=="ford")
 	then
-		productObject.setDiscount(25);
+		productObject.setDiscount(9);
 	end

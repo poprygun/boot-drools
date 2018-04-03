@@ -26,9 +26,7 @@ public class CarDiscountController {
 
 		car.setBrand(brand);
 
-		dealershipService.getProductDiscount(car);
-
-		return car;
+        return dealershipService.getCarDiscount(car);
 	}
 
 }
